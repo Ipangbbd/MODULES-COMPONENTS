@@ -1,0 +1,94 @@
+:root {
+    --primary: #52f2b8;
+    --secondary: #2c403a;
+    --accent: #37a686;
+
+    --mixer-1: #297861;
+    --mixer-2: #19483b;
+}
+
+body {
+    background-color: var(--secondary);
+}
+
+.Loader-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 50%;
+}
+
+#Loader {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    animation: bounce 2s infinite ease-in-out, aura 2s infinite ease-in-out;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.dot:nth-child(2) {
+    background-color: var(--accent);
+    animation-delay: 0.2s, 0.2s;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.dot:nth-child(3) {
+    background-color: var(--mixer-1);
+    animation-delay: 0.4s, 0.4s;
+    box-shadow: 0 0 10px var(--mixer-1);
+}
+
+.dot:nth-child(4) {
+    background-color: var(--mixer-2);
+    animation-delay: 0.6s, 0.6s;
+    box-shadow: 0 0 10px var(--mixer-2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 10px;
+    animation: aura2 2s infinite ease-in-out;
+    color: white;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes aura {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--primary);
+    }
+}
+
+@keyframes aura2 {
+    0%, 100% {
+        text-shadow: 0 0 10ox #0000;
+    }
+    50% {
+        text-shadow: 0 0 20px var(--primary);
+    }
+}

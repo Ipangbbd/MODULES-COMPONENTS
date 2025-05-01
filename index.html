@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End LKS MODULES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Front-End Modules BY ALI</h1>
+        <p class="subtitle">Showcasing Pure HTML, CSS, and JavaScript Modules Hahay</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Messenger App Mockup</h2>
+            <div class="messenger-container">
+                <div class="messenger">
+                    <div class="messenger-header">Messages</div>
+                    <div class="dialogs-list" id="dialogsList">
+                        <!-- Dialog items will be added here by JavaScript -->
+                    </div>
+                    <div class="chat-view" id="chatView">
+                        <div class="chat-header">
+                            <button class="back-button" id="backButton">←</button>
+                            <div id="chatUserName">John Doe</div>
+                            <div style="width: 24px;"></div> <!-- Spacer for alignment -->
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Chat messages will be added here by JavaScript -->
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Type a message..." id="messageInput">
+                            <button id="sendButton">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Loading Animation</h2>
+            <div class="loading-container">
+                <div class="loading-animation">
+                    <div class="loading-dot dot-1"></div>
+                    <div class="loading-dot dot-2"></div>
+                    <div class="loading-dot dot-3"></div>
+                    <div class="loading-dot dot-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Digital Timer</h2>
+            <div class="timer-container">
+                <div class="timer-display" id="timerDisplay">00:00:00</div>
+                <div class="timer-controls">
+                    <button class="timer-btn start-btn" id="startBtn">Start</button>
+                    <button class="timer-btn pause-btn" id="pauseBtn">Pause</button>
+                    <button class="timer-btn reset-btn" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Canvas Animation</h2>
+            <div class="canvas-container">
+                <canvas id="animation-canvas" width="400" height="320"></canvas>
+            </div>
+        </section>
+
+        <section>
+            <h2>Card Disappearance Effect</h2>
+            <div class="transition-container">
+                <div class="controls">
+                    <input type="number" id="gridSize" min="2" max="10" value="4" placeholder="Input gridSize(N)">
+                    <button id="loadImage">Load Image</button>
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                    <div id="imageContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>JavaScript Calendar</h2>
+            <div class="calendar-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <div class="calendar-month-year" id="calendarMonthYear"></div>
+                        <div class="calendar-nav">
+                            <button id="prevMonthBtn">←</button>
+                            <button id="nextMonthBtn">→</button>
+                        </div>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days" id="calendarDays">
+                        <!-- Calendar days will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 CodeWithAli. All modules built with PURE N.A.T.I.V.E HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

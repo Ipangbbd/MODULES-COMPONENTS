@@ -1,0 +1,66 @@
+:root {
+    --primary: #52F2B8;
+    --secondary: #2C403A;
+    --accent: #37A686;
+}
+
+body {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#imageContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid var(--accent);
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.card {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card.disappearing {
+    opacity: 0;
+    transform: scale(0.5) rotate(45deg);
+    pointer-events: none;
+}
+
+input {
+    background: none;
+    border: 1px solid var(--accent);
+    padding: 5px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px black;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--secondary);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px black;
+}
+

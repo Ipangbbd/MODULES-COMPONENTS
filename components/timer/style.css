@@ -1,0 +1,48 @@
+:root {
+    --primary: #52f2b8;
+    --secondary: #2c403a;
+    --accent: #37a686; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+}
+
+.timer-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    position: fixed;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 50%;
+    color: white;
+    background-color: #2c403a;
+    color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+#timerDisplay {
+    font-size: 40px;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.timer-container button{
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 30px;
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--accent);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 1. Dialog Lists -->
+        <div id="dialogList" class="screen">
+            <div class="header">
+                <h1>Dialog</h1>
+            </div>
+            <ul>
+                <li onclick="openChat('Jullius')">Jullius</li>
+                <li onclick="openChat('Ali')">Ali</li>
+                <li onclick="openChat('Celestia')">Celestia</li>
+            </ul>
+        </div>
+
+        <!-- 2. Chat Views -->
+        <div id="chatView" class="screen">
+            <div class="header">
+                <button onclick="goBack()">&lt;</button>
+                <h1 id="chat-user"></h1>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">Hello!</div>
+                <div class="message sent">Hi! How are you?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type here...">
+                <button onclick="sendMsg()">Send</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
